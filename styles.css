@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro);
+
+body {
+    overflow: hidden;
+    font-family: 'Source Code Pro';
+    background-color: rgb(223, 221, 225);
+}
+
+.node {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: #f6f6f6;
+    border: 3px solid rgb(59, 36, 66);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    margin: 0px;
+    transition: 100ms;
+    z-index: 9;
+}
+
+.node:hover {
+    background-color: rgb(234, 201, 250);
+
+    scale: 110%;
+}
+
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vw;
+    z-index: -999;
+}
+
+.treeContainer {
+    scale: 50%;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons button {
+    margin: 10px;
+    font-family: 'Source Code Pro';
+    padding: 5px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    transition: 200ms;
+}
+
+.buttons button:hover {
+    background-color: plum;
+    scale: 115%;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.header {
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#newgame {
+    font-weight: bold;
+}
+
+#info {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+}

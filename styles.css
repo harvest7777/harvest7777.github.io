@@ -4,7 +4,10 @@ body {
     overflow: hidden;
     font-family: 'Source Code Pro';
     background-color: rgb(223, 221, 225);
+    background-size: cover;
 }
+
+
 
 .node {
     position: absolute;
@@ -33,7 +36,7 @@ svg {
     left: 0;
     width: 100vw;
     height: 100vw;
-    z-index: -999;
+    z-index: -1;
 }
 
 .treeContainer {
@@ -62,6 +65,7 @@ svg {
 
 h1 {
     font-size: 20px;
+    z-index: 9;
 }
 
 .header {
@@ -79,4 +83,25 @@ h1 {
     position: absolute;
     bottom: 0;
     margin: 0;
+}
+
+.notsupported {
+    display: none;
+}
+
+
+@media screen and (max-width: 950px) {
+    .notsupported {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(223, 221, 225);
+        z-index: 100 !important;
+    }
 }
